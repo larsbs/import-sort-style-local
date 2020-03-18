@@ -1,0 +1,24 @@
+{
+  "name": "import-sort-style-local",
+  "version": "1.0.0",
+  "description": "Style plugin for import-sort that takes into account local modules (~/).",
+  "author": "Lars <lars.bs@hotmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/larbs/import-sort-style-local"
+  },
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc -w",
+    "prepublishOnly": "npm run build",
+    "clean": "rimraf dist"
+  },
+  "devDependencies": {
+    "import-sort-parser": "^6.0.0",
+    "import-sort-style": "^6.0.0",
+    "rimraf": "^3.0.2",
+    "typescript": "^3.8.3"
+  }
+}
